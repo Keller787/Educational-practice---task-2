@@ -1,0 +1,125 @@
+/* Универсальный селектор */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Стили для шапки сайта */
+header {
+	margin-bottom: 30px;
+    padding: 20px 0;
+    background-color: rgb(49, 57, 65);
+    font-family: sans-serif;
+    text-align: center;
+    color: #fff;
+}
+
+/* Стили для текста в шапке сайта, конкретно название кейс-задачи */
+.case-name {
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+/* Стили для контейнера, в котором находится вся информация
+	о дате рождения пользователя */
+main {
+	width: 85%;
+	height: 400px;
+	border: 3px solid crimson;
+	border-radius: 20px;
+	margin: 0 auto;
+	font-family: sans-serif;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	box-shadow: rgba(220, 20, 60, 0.25) 0px 30px 60px -12px inset, rgba(220, 20, 60, 0.3) 0px 18px 36px -18px inset;
+}
+
+/* Стили для контейнера с датой рождения пользователя */
+.date-box {
+	width: 35%;
+	height: auto;
+	padding-top: 30px;
+	text-align: center;
+	border-bottom: 3px solid black;
+}
+
+/* Стили для ссылки на обновление данных пользователя */
+.hyper {
+	color: black;
+	text-decoration: none;
+	transition: 0.4s;
+	font-size: 18px;
+}
+
+/* Стили для ссылки на обновление данных пользователя
+	при наведении на них курсором мыши */
+.hyper:hover {
+	color: blue;
+	transition: 0.4s;
+}
+
+/* Стили для контейнера с информацией о введённой дате рождения */
+.info-box {
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+/* Стили для контейнера с вопросом по дате рождения и ответом на него */
+.box {
+	width: 22%;
+	height: 130px;
+	text-align: center;
+	margin: 25px 0;
+}
+
+/* Стили для контейнера с вопросом по дате рождения */
+.box-header {
+	width: 100%;
+	height: 70px;
+	padding: 20px 0;
+	background-color: rgb(0, 191, 255);
+	border-top-right-radius: 20px;
+	border-top-left-radius: 20px;
+	color: white;
+}
+
+/* Стили для контейнера с ответом на вопрос по дате рождения */
+.box-content {
+	width: 100%;
+	height: 60px;
+	padding: 20px 0;
+	border: 4px solid rgb(0, 191, 255);
+	border-bottom-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+	border-top: none;
+	font-size: 20px;
+}
+
+/* Стили для контейнера с ссылкой */
+.link-box {
+	align-self: flex-end;
+	padding-right: 40px;
+}
+
+/* Стили при уменьшении ширины страницы */
+@media (max-width: 940px) {
+	main {
+		height: 750px;
+	}
+	.date-box {
+		width: 57%;
+	}
+	.info-box {
+		flex-direction: column;
+	}
+	.box {
+		width: 36%;
+	}
+}
