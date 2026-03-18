@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!-- Подключение файла со стилями -->
+	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+	
+	<!-- Название страницы -->
+	<title>Учебная практика - задача №2</title>
+</head>
+<body>
+
+	<!-- "Шапка" страницы -->
+	<header>
+		<h1>
+			Кейс-задача №2
+		</h1>
+		<p class="case-name">
+			Стилистическое преобразование чисел
+		</p>
+	</header>
+
+	<!-- Контейнер, в котором содержится дата рождения, введённая пользователем, день недели, високосный год и возраст пользователя, рассчитанные по его дате рождения -->
+	<main>
+
+		<!-- Дата рождения пользователя -->
+		<div class="date-box">
+			<h1 id="birthDate"></h1>
+		</div>
+
+		<!-- Информация по введённой дате рождения -->
+		<div class="info-box">
+
+			<!-- День недели даты рождения -->
+			<div class="box">
+				<div class="box-header">
+					<h2>
+						День недели
+					</h2>
+				</div>
+				<div class="box-content">
+					<p id="dayOfWeek"></p>
+				</div>
+			</div>
+
+			<!-- Високосный год по дате рождения -->
+			<div class="box">
+				<div class="box-header">
+					<h2>
+						Високосный год
+					</h2>
+				</div>
+				<div class="box-content">
+					<p id="yearIsLeap"></p>
+				</div>
+			</div>
+
+			<!-- Возраст пользователя по его дате рождения -->
+			<div class="box">
+				<div class="box-header">
+					<h2>
+						Возраст
+					</h2>
+				</div>
+				<div class="box-content">
+					<p id="ageByDate"></p>
+				</div>
+			</div>
+		</div>
+
+		<!-- Контейнер для ссылки -->
+		<div class="link-box">
+			
+			<!-- Ссылка для обновления данных -->
+			<a href="#" onclick="location.reload(); return false" class="hyper">
+				Обновить дату рождения
+			</a>
+		</div>
+	</main>
+
+	<!-- Подключение JavaScript файла -->
+	<script src="JS/script.js"></script>
+</body>
+</html>
